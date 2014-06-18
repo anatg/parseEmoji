@@ -1,12 +1,18 @@
-emoji.img_path = 'static/emoji/';
+emoji.img_path = '../static/emoji/';
+emoji.replace_mode = "css";
 emoji.init_env();
+
+// Static Emoji rendering in page
+var footer = "Made with :green_heart: by <a target='_blank' href='https://twitter.com/jasdev'>@jasdev</a>";
+var instructions = "Enter an integer in the textarea below :point_down:";
+document.getElementById('footer').innerHTML = emoji.replace_colons(footer);
+document.getElementById('instructions').innerHTML = emoji.replace_colons(instructions);
 
 function parseEmoji() {
     var text = document.getElementById('input').value;
-    emoji.replace_mode = "css";
 
     if(isNaN(text))
-        document.getElementById('out').innerHTML = emoji.replace_colons(":worried:");
+        document.getElementById('out').innerHTML = emoji.replace_colons(":no_good:");
     else {
         var out = emoji.replace_colons(stringToEmojiCode(text));
         document.getElementById('out').innerHTML = out;

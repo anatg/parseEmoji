@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>.parseEmoji(...)</title>
     <link href="../static/emoji.css" rel="stylesheet" type="text/css" />
+    <link href="../static/style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <textarea id="input" style="width: 400px; height: 150px" onkeyup="parseEmoji()" onchange="parseEmoji()"></textarea>
-    <div id="out" style="width: 400px; min-height: 150px; background-color: #eee; padding: 4px;"></div>
+    <div class="center">
+        <h1>.parseEmoji(...)</h1>
+        <p id="instructions"></p>
+        <textarea id="input" onkeyup="parseEmoji()" onchange="parseEmoji()"></textarea>
+        <div id="out"></div>
+        <div id="footer"></div>
+    </div>
 
     <script src="../static/emoji.js" type="text/javascript"></script>
     <script src="../static/index.js" type="text/javascript"></script>

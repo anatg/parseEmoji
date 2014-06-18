@@ -1,4 +1,4 @@
-emoji.img_path = '../static/emoji/';
+emoji.img_path = './static/emoji/';
 emoji.replace_mode = "css";
 emoji.init_env();
 

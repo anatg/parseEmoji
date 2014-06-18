@@ -1,0 +1,30 @@
+h1, #footer, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#out {
+    width: 336px;
+    min-height: 18px;
+    background-color: #eee;
+    padding: 2px;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+#input {
+    width: 336px;
+    height: 18px;
+    resize: none;
+}
+
+.center {
+    width: 336px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
